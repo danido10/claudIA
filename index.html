@@ -26,7 +26,7 @@
                         <li><a href="redesociales.html">Redes Sociales</a></li>
                         <li><a href="cortometraje.html">Cortometraje</a></li>
                         <li><a href="trailer.html">Trailer</a></li>
-                        <li class="special-link"><a href="https://www.ufv.es">Entra al universo de ClaudIA</a></li>
+                        <li class="special-link"><a href="index.html">Entra al universo de ClaudIA</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +42,7 @@
     <main>
        <!-- HERO SECTION -->
     <section class="hero" style="
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('fondo.png');
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/fondo.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -62,7 +62,7 @@
         <section class="new-reality">
             <div class="container-flex">
                 <div class="reality-image">
-                    <img src="cafetera.png" alt="Cafetera Robótica">
+                    <img src="imagenes/cafetera.png" alt="Cafetera Robótica">
                 </div>
                 <div class="reality-text">
                     <h3>UNA NUEVA REALIDAD</h3>
@@ -79,31 +79,31 @@
             <div class="products-grid">
                 <!-- Card 1 -->
                 <a href="podcast.html" class="card">
-                    <img src="podcast portada.jpeg" alt="Podcast">
+                    <img src="imagenes/podcast portada.jpeg" alt="Podcast">
                     <div class="card-info">
                         <h5>Podcast Diegético</h5>
                         <p>Descubre el podcast de nuestro "Nuevo Mundo"</p>
                     </div>
                 </a>
                 <!-- Card 2 -->
-                <a href="https://www.ufv.es" class="card">
-                    <img src="moodreelportada.png" alt="Moodreel">
+                <a href="moodreel.html" class="card">
+                    <img src="imagenes/moodreelportada.png" alt="Moodreel">
                     <div class="card-info">
                         <h5>Moodreel</h5>
                         <p>Atmosfera visual de nuestro proyecto</p>
                     </div>
                 </a>
                 <!-- Card 3 -->
-                <a href="https://www.ufv.es" class="card">
-                    <img src="vrportada.png" alt="VR">
+                <a href="vr.html" class="card">
+                    <img src="imagenes/vrportada.png" alt="VR">
                     <div class="card-info">
                         <h5>VR/3D</h5>
                         <p>Sumérgete en la cafetería de ClaudIA</p>
                     </div>
                 </a>
                 <!-- Card 4 -->
-                <a href="https://www.ufv.es" class="card">
-                    <img src="redessocialesportada.jpeg" alt="Redes Sociales">
+                <a href="redesociales.html" class="card">
+                    <img src="imagenes/redessocialesportada.jpeg" alt="Redes Sociales">
                     <div class="card-info">
                         <h5>Redes Sociales</h5>
                         <p>Nuestra plataforma para conectar la narrativa</p>
@@ -111,15 +111,15 @@
                 </a>
                 <!-- Card 5 -->
                 <a href="cortometraje.html" class="card">
-                    <img src="cortometrajeportada.png" alt="Cortometraje">
+                    <img src="imagenes/cortometrajeportada.png" alt="Cortometraje">
                     <div class="card-info">
                         <h5>Cortometraje</h5>
                         <p>La pieza final de nuestro universo</p>
                     </div>
                 </a>
                 <!-- Card 6 -->
-                <a href="https://www.ufv.es" class="card">
-                    <img src="trailer portada.jpg" alt="Trailer">
+                <a href="trailer.html" class="card">
+                    <img src="imagenes/trailer portada.jpg" alt="Trailer">
                     <div class="card-info">
                         <h5>Trailer</h5>
                         <p>El inicio de la experiencia</p>
@@ -128,31 +128,56 @@
             </div>
         </section>
 
-        <!-- CTA SECTION -->
-        <section class="cta-section">
-            <div class="cta-box">
-                <h4>Entra al universo</h4>
-                <p>Experimenta la narrativa completa del universo de ClaudIA</p>
-                <a href="https://www.ufv.es" class="btn-empezar">EMPEZAR</a>
+      <!-- CONTACTO SECTION -->
+    <section class="cta-section">
+    <div class="contact-card">
+        <div class="contact-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        </div>
+        <h4>Formulario de contacto</h4>
+        <p class="contact-subtitle">Contáctanos si tienes alguna pregunta</p>
+
+        <div id="success"></div>
+
+        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+        <div class="form-row-2">
+            <div class="field">
+            <label>Nombre y apellido</label>
+            <input type="text" id="name" placeholder="Juan García" required />
+            <p class="help-block text-danger"></p>
             </div>
-        </section>
+            <div class="field">
+            <label>Correo electrónico</label>
+            <input type="email" id="email" placeholder="juan@email.com" required />
+            <p class="help-block text-danger"></p>
+            </div>
+        </div>
+        <div class="field">
+            <label>Asunto</label>
+            <input type="text" id="subject" placeholder="¿En qué podemos ayudarte?" required />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="field">
+            <label>Mensaje</label>
+            <textarea rows="5" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <p class="help-block text-danger"></p>
+        </div>
+        <button type="submit" class="btn-enviar">ENVIAR</button>
+        </form>
+    </div>
+    </section>
     </main>
 
     <!-- FOOTER NAV -->
-    <nav class="bottom-nav">
-        <a href="#"><span>🏠</span> Inicio</a>
-        <a href="#"><span>🖼️</span> Galería</a>
-        <a href="#"><span>ℹ️</span> Nosotros</a>
-        <a href="#"><span>📧</span> Contacto</a>
-    </nav>
+
 
     <!-- FOOTER -->
     <footer>
         <div class="footer-logo">CLAUD<span>IA</span></div>
-        <div class="social-icons">
-            <!-- Iconos simulados -->
-            <span>🌐</span> <span>📸</span> <span>🐦</span>
-        </div>
+  
         <div class="footer-links">
             <a href="#">Project Info</a>
             <a href="#">The Universe</a>
