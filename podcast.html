@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClaudIA - Podcast</title>
+    <title>ClaudIA - Podcast Diegético</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- mismas fuentes del proyecto principal -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- HEADER-->
+<!-- HEADER (IGUAL AL PROYECTO PRINCIPAL) -->
 <header>
     <nav class="navbar">
         <div class="menu-container">
@@ -16,20 +21,22 @@
                 <span></span>
                 <span></span>
                 <span></span>
+
                 <ul class="dropdown-menu">
-                    <li><a href="podcast.html">Podcast</a></li>
+                    <li><a href="podcast.html">Podcast diegético</a></li>
                     <li><a href="#">Moodreel</a></li>
                     <li><a href="#">VR/3D</a></li>
                     <li><a href="#">Redes Sociales</a></li>
                     <li><a href="#">Cortometraje</a></li>
                     <li><a href="#">Trailer</a></li>
+                    <li class="special-link"><a href="#">Entra al universo de ClaudIA</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="logo">
-            <a href="index.html" style="text-decoration: none;">
-                <h1 style="color: black;">CLAU<span style="color: #6ca6cd;">DIA</span></h1>
+            <a href="index.html" style="text-decoration:none;">
+                <h1>CLAU<span>DIA</span></h1>
             </a>
         </div>
 
@@ -41,16 +48,8 @@
 
 <main>
 
-    <!-- HERO DEL PODCAST -->
-    <section class="hero" style="
-        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/portada-novo-mundo.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    ">
+    <!-- HERO PODCAST (SIN INLINE CSS) -->
+    <section class="hero podcast-hero">
         <div class="hero-content">
             <p class="subtitle">PODCAST DIEGÉTICO</p>
             <h2>NOVO MUNDO</h2>
@@ -62,12 +61,10 @@
     <section class="new-reality">
         <div class="container-flex">
 
-            <!-- IMAGEN -->
             <div class="reality-image">
-                <img src="img/portada-novo-mundo.jpg" alt="Podcast">
+                <img src="img/portada-novo-mundo.jpg" alt="Podcast Novo Mundo">
             </div>
 
-            <!-- TEXTO -->
             <div class="reality-text">
                 <h3>EP 01</h3>
                 <p>
@@ -80,13 +77,12 @@
         </div>
     </section>
 
-    <!-- REPRODUCTOR SIMPLE -->
+    <!-- CTA AUDIO -->
     <section class="cta-section">
         <div class="cta-box">
             <h4>Escuchar episodio</h4>
             <p>Duración: 16:35</p>
 
-            <!-- AUDIO REAL -->
             <audio controls>
                 <source src="audio/episodio1.mp3" type="audio/mpeg">
                 Tu navegador no soporta audio.
@@ -96,13 +92,24 @@
 
 </main>
 
-<!-- FOOTER -->
+<!-- FOOTER (IGUAL AL PROYECTO PRINCIPAL) -->
 <footer>
     <div class="footer-logo">CLAUD<span>IA</span></div>
+
     <div class="social-icons">
-        <span>🌐</span> <span>📸</span> <span>🐦</span>
+        <span>🌐</span>
+        <span>📸</span>
+        <span>🐦</span>
     </div>
-    <p class="copyright">© 2024 ClaudIA</p>
+
+    <div class="footer-links">
+        <a href="#">Project Info</a>
+        <a href="#">The Universe</a>
+        <a href="#">Credits</a>
+        <a href="#">Privacy</a>
+    </div>
+
+    <p class="copyright">© 2024 ClaudIA. Todos los derechos reservados.</p>
 </footer>
 
 </body>
