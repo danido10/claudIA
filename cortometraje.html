@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClaudIA - Cortometraje</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- misma tipografía del proyecto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HEADER (UNIFICADO CON EL PROYECTO) -->
-      <!-- HEADER / NAVIGATION -->
     <header>
         <nav class="navbar">
             <div class="menu-container">
@@ -22,14 +16,13 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <!-- Menú Desplegable -->
                     <ul class="dropdown-menu">
                         <li><a href="podcast.html">Podcast diegético</a></li>
                         <li><a href="moodreel.html">Moodreel 1</a></li>
                         <li><a href="vr.html">VR/3D</a></li>
-                        <li><a href="redesociales.html">Redes Sociales</a></li>
                         <li><a href="cortometraje.html">Cortometraje</a></li>
-                        <li><a href="trailer.html">Trailer</a></li>
+                        <li><a href="sinopsis.html">Sinopsis</a></li>
+                        <li><a href="estrategiatransmedia.html">Estrategia Transmedia</a></li>
                         <li class="special-link"><a href="index.html">Entra al universo de ClaudIA</a></li>
                     </ul>
                 </div>
@@ -46,85 +39,69 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
+        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/cortometrajeportada.png'); background-size: cover; background-position: center; height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <div class="hero-content">
+                <p class="subtitle">PROYECTO TRANSMEDIA</p>
+                <h2>CORTOMETRAJE</h2>
+                <p class="tagline">Os presentamos nuestro cortometraje final</p>
+            </div>
+        </section>
 
+        <!-- SINOPSIS Y POSTER -->
+        <section class="new-reality">
+            <div class="container-flex">
+                <div class="reality-image">
+                    <img src="imagenes/cortometraje-poster.png" alt="Cortometraje ClaudIA">
+                </div>
+                <div class="reality-text">
+                    <h3>SINOPSIS</h3>
+                    <p>En un futuro donde la tecnología convive de forma natural con la vida cotidiana, Claudia, una IA con apariencia humana, trabaja como barista en una cafetería. Tras observar las interacciones sociales de los clientes, desarrolla una fuerte curiosidad por la amistad y la conexión humana.</p>
+                </div>
+            </div>
+        </section>
 
-<main>
-
- <!-- HERO SECTION -->
-    <section class="hero" style="
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/cortometrajeportada.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    ">
-        <div class="hero-content">
-            <p class="subtitle">PROYECTO TRANSMEDIA</p>
-            <h2>CORTOMETRAJE</h2>
-            <p class="tagline">Os presentamos nuestro cortometraje final</p>
-        </div>
-    </section>
-
-<!-- VIDEO / CONTENIDO -->
-<section class="new-reality">
-    <div class="container-flex">
-
-        <!-- POSTER -->
-        <div class="reality-image">
-            <img src="imagenes/cortometraje-poster.png" alt="Cortometraje ClaudIA">
-        </div>
-
-        <!-- SINOPSIS -->
-        <div class="reality-text">
-            <h3>SINOPSIS</h3>
-            <p>
-                En un futuro donde la tecnología convive de forma natural con la vida cotidiana,
-                Claudia, una IA con apariencia humana, trabaja como barista en una cafetería.
-                Tras observar las interacciones sociales de los clientes, desarrolla una fuerte
-                curiosidad por la amistad y la conexión humana.
-            </p>
-        </div>
-
+        <!-- SECCIÓN DEL VÍDEO PARA ARCHIVO LOCAL -->
+<section class="moodreel" style="background-color: #f4f7f9; padding: 60px 10%; text-align: center;">
+    <div class="section-title">
+        <h4>VER CORTOMETRAJE</h4>
+    </div>
+    
+    <div style="max-width: 1000px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000;">
+        <video width="100%" controls poster="imagenes/cortometrajeportada.png">
+            <source src="multimedia/cortometraje.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de vídeos.
+        </video> 
     </div>
 </section>
 
-<!-- BLOQUE INFO -->
-<section class="cta-section">
-    <div class="cta-box">
+        <!-- BLOQUE INFO CRÉDITOS -->
+        <section class="cta-section">
+            <div class="cta-box">
+                <h4>ClaudIA: Cortometraje</h4>
+                <p>Una historia sobre identidad, emoción y aprendizaje artificial</p>
+                <div style="margin-top: 20px; font-size: 0.9rem; line-height: 1.8;">
+                    <p><strong>Dirección:</strong> Pau Rosselló</p>
+                    <p><strong>Producción:</strong> Marianna Sgro</p>
+                    <p><strong>Guión / DOP:</strong> Julia Teba</p>
+                    <p><strong>Arte:</strong> Adriano Castañeda</p>
+                    <p><strong>Sonido:</strong> Elena Lobo</p>
+                    <p><strong>Postproducción:</strong> Daniel Do Canto</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <h4>ClaudIA: Cortometraje</h4>
-        <p>Una historia sobre identidad, emoción y aprendizaje artificial</p>
-
-        <div style="margin-top: 20px; font-size: 0.9rem;">
-            <p><strong>Dirección:</strong> Pau Rosselló</p>
-            <p><strong>Producción:</strong> Marianna Sgro</p>
-            <p><strong>Guión / DOP:</strong> Julia Teba</p>
-            <p><strong>Arte:</strong> Adriano Castañeda</p>
-            <p><strong>Sonido:</strong> Elena Lobo</p>
-            <p><strong>Postproducción:</strong> Daniel Do Canto</p>
+    <footer>
+        <div class="footer-logo">CLAUD<span>IA</span></div>
+        <div class="footer-links">
+            <a href="#">Project Info</a>
+            <a href="#">The Universe</a>
+            <a href="#">Credits</a>
+            <a href="#">Privacy</a>
         </div>
-
-    </div>
-</section>
-
-</main>
-
-<!-- FOOTER (UNIFICADO) -->
-<footer>
-    <div class="footer-logo">CLAUD<span>IA</span></div>
-
-    <div class="footer-links">
-        <a href="#">Project Info</a>
-        <a href="#">The Universe</a>
-        <a href="#">Credits</a>
-        <a href="#">Privacy</a>
-    </div>
-
-    <p class="copyright">© 2024 ClaudIA. Todos los derechos reservados.</p>
-</footer>
+        <p class="copyright">© 2024 ClaudIA. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
